@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+	{% for p in pages %}
+		<a href="{{p.url}}">{{p.title}}</a>,
+		by {{p.author}}
+		<br><br>
+	{% endfor %}
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="page">
+  <div class="page-heading">
+    <div class="page-title">
+      {{page.title}}
+    </div>
+
+    <!-- <div class="post-date">
+      {{page.created.strftime("%b %d, %Y")}}
+    </div> -->
+  </div>
+
+  <div class="page-content">
+    {{page.content}}
+  </div>
+</div>
+
+<a href="/_edit{{page.url}}">edit</a>
+
+{% endblock %}
